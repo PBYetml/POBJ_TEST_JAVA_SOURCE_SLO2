@@ -1,0 +1,23 @@
+/* CHAFLA JONATHAN SLO2 QUESTION 6 TE JAVA */
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) 
+    {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print( "Veuillez saisir nombre decimal : " );
+            int valeur = scanner.nextInt();
+            System.out.print( "Veuillez choisir la taille en octet : " );
+            int tailleOctet = scanner.nextInt();
+            String binaire = ConvBinaire (valeur, tailleOctet);
+            System.out.println( "Votre numero en binaire est : 0b"+binaire);
+    }   
+    
+    public static String ConvBinaire (int valeur, int tailleOctet) 
+    {
+	    String binary = Integer.toBinaryString(valeur);
+	    
+        return binary;
+    }
+}
